@@ -6,6 +6,7 @@
 %\usepackage{cite}
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage{amsmath}
 %\usepackage{multicol}
 \newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
 \usepackage{natbib}
@@ -23,7 +24,7 @@
 \newcommand{\cscurso}{Fundamentos de Lenguajes de Programación}
 \newcommand{\csuniversidad}{Universidad La Salle}
 \newcommand{\csescuela}{Escuela Profesional de Ingeniería de Software}
-\newcommand{\cspracnr}{03}
+\newcommand{\cspracnr}{04}
 \newcommand{\cstema}{Ensamblador}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,52 +150,46 @@
 	\section{Ejercicios}\label{sec:ejercicios}	
 	
 	\begin{enumerate}
-		\item Implementar un programa que muestre la suma, la diferencia, la multiplicación, la división y el promedio de dos números ingresados por teclado. 
-			\begin{lstlisting}
-			>> Ingrese un numero: 3
-			>> Ingrese otro numero: 2
-			>> La suma es: 5
-			>> La diferencia es: 1
-			>> La multiplicacion es: 6
-			>> La division es: 1.5
-			>> El promedio es: 2.5
-			\end{lstlisting}
-
-		\item Implementar un programa que solite una cantidad \textit{n} de números y luego retorne: la suma de estos, el promedio, el mayor y el menor.
+		\item Cree un array de 5 elementos con multiplos de un número ingresado por teclado, luego debe mostrar dicho array por pantalla.  \textbf{(4 puntos)}			
 		
 			\begin{lstlisting}
-			>> Ingrese la cantidad de numeros: 4
-			>> Ingrese un numero: 3
-			>> Ingrese un numero: 2
-			>> Ingrese un numero: 2
-			>> Ingrese un numero: 3
-			>> La suma es: 10		
-			>> El promedio es: 2.5
-			>> El mayor es: 3
-			>> El menor es: 2
+			>> Ingrese un numero: 4
+			>> Los 5 primeros multiplos de 4 son:
+			>> 4
+			>> 8
+			>> 12
+			>> 16
+			>> 20
 			\end{lstlisting}
+			
+		\item Cree un programa que solicite 5 elementos por teclado y los almacene en un Array. Luego se debe mostrar estos elementos en orden inverso. \textbf{(4 puntos)}	 		
 		
-		\item Implemente un programa que solicite por teclado: la longitud de los tres lados de un triangulo. Luego el programa debe indicar si es un triangulo valido.
+			\begin{lstlisting}
+			>> Ingrese un numero: 1
+			>> Ingrese un numero: 2
+			>> Ingrese un numero: 3
+			>> Ingrese un numero: 4
+			>> Ingrese un numero: 5
+			>> Los elementos en orden inverso son:
+			>> 5 4 3 2 1
+			\end{lstlisting}
+			
+		\item Cree un programa que solite por teclado dos vectores unitarios en 3 dimensiones (un vector es un array de tamaño 3). Luego se debe mostrar el producto escalar de ambos vectores.   \textbf{(4 puntos)}
+		
+		El producto escalar se define como: $ \overrightarrow{a}.\overrightarrow{b} = ( a_x * b_x ) + ( a_y * b_y )  + ( a_z * b_z ) $
 		
 		\begin{lstlisting}
-		>> Ingrese el primer lado del triangulo: 2
-		>> Ingrese el segundo lado del triangulo: 3
-		>> Ingrese el tercer lado del triangulo: 2
-		>> El triangulo es valido
-		\end{lstlisting}
+		>> Ingrese un elemento del vector 1: 2
+		>> Ingrese un elemento del vector 1: 3
+		>> Ingrese un elemento del vector 1: 4
 		
-		\item Implemente un programa que solicite un número \textit{n}, luego este debe mostrar que números desde 1 a 20, son multiplos de \textit{n}.
-			
-			\begin{lstlisting}
-			>> Ingrese un numero: 3
-			>> El numero 1 no es multiplo de 3
-			>> El numero 2 no es multiplo de 3
-			>> El numero 3 si es multiplo de 3
-			>> El numero 4 no es multiplo de 3
-			>> El numero 5 no es multiplo de 3
-			>> El numero 6 si es multiplo de 3
-			...
-			\end{lstlisting}
+		>> Ingrese un elemento del vector 2: 3
+		>> Ingrese un elemento del vector 2: 2
+		>> Ingrese un elemento del vector 2: 1
+		
+		>> El producto escalar es: 16
+		\end{lstlisting}
+
 	\end{enumerate}
 
 
@@ -211,12 +206,12 @@
 			\hline 
 			\textbf{Informe}: El informe debe estar en Latex, con un formato limpio y facil de leer.  & 3 & 1.5 & 0   \\ 
 			\hline 
-			\textbf{Implementación}: Implementa la funcionalidad correcta de cada ejercicio.  & 10 & 5 & 0   \\ \hline
+			\textbf{Implementación}: Implementa la funcionalidad correcta de cada ejercicio.  & 12 & 6 & 0   \\ \hline
 			\textbf{Mensaje de ayuda}: Agrega mensajes de ayuda (textos solicitando que se ingrese los números, etc.) por consola.  & 5 & 2.5 & 0   \\ \hline
 			
 			%\textbf{Implementación}: Responde cada ejercicio correctamente con una complejidad alta.  & 10 & 5 & 0   \\ \hline
 							
-			\textbf{Presentación}: El alumno demuestra dominio del tema y conoce con exactitud cada parte de su código. & 2 & 1 & 0   \\ 			\hline 
+			%\textbf{Presentación}: El alumno demuestra dominio del tema y conoce con exactitud cada parte de su código. & 2 & 1 & 0   \\ 			\hline 
 			
 			\textbf{Errores ortográficos}: Por cada error ortográfico, se le descontara 1 punto.  & - & - & -   \\ \hline
 			
