@@ -1,0 +1,300 @@
+%package list
+\documentclass{article}
+\usepackage[top=3cm, bottom=3cm, outer=3cm, inner=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+%\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{array}
+%\usepackage{multicol}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\usepackage{natbib}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\csemail}{vmachacaa@ulasalle.edu.pe}
+\newcommand{\csdocente}{MSc. Vicente Enrique Machaca Arceda}
+\newcommand{\cscurso}{Fundamentos de Lenguajes de
+Programación}
+\newcommand{\csuniversidad}{Universidad La Salle}
+\newcommand{\csescuela}{Escuela Profesional de Ingeniería de Software}
+\newcommand{\cspracnr}{02}
+\newcommand{\cstema}{Practica 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\AtBeginDocument{\selectlanguage{spanish}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\refname}{Referencias}
+\renewcommand{\tablename}{Tabla} %esto no funciona cuando se usa babel
+\AtBeginDocument{%
+	\renewcommand\tablename{Tabla}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{30pt}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\fancyhead[L]{\raisebox{-0.2\height}{\includegraphics[width=3cm]{img/logo_salle}}}
+\fancyhead[C]{}
+\fancyhead[R]{\fontsize{7}{7}\selectfont	\csuniversidad \\ \csescuela \\ \textbf{\cscurso} }
+\fancyfoot[L]{MSc. Vicente Machaca}
+\fancyfoot[C]{\cscurso}
+\fancyfoot[R]{Página \thepage}
+
+\usepackage{listings}
+\usepackage{xcolor} % for setting colors
+
+% set the default code style
+\lstset{
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=left, % display line numbers on the left
+    commentstyle=\color{green}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red} % string color
+}
+
+
+
+
+
+
+\begin{document}
+	\nocite{10.5555/1610485}
+	\vspace*{10px}
+	
+	\begin{center}	
+		\fontsize{17}{17} \textbf{ Práctica \cspracnr}
+	\end{center}
+	%\centerline{\textbf{\underline{\Large Título: Informe de revisión del estado del arte}}}
+	%\vspace*{0.5cm}
+	
+
+	\begin{table}[h]
+		\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+			\hline 
+			\textbf{DOCENTE} & \textbf{CARRERA}  & \textbf{CURSO}   \\
+			\hline 
+			\csdocente & \csescuela & \cscurso    \\
+			\hline 
+		\end{tabular}
+	\end{table}	
+	
+	
+	\begin{table}[h]
+		\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+			\hline 
+			\textbf{PRÁCTICA} & \textbf{TEMA}  & \textbf{DURACIÓN}   \\
+			\hline 
+			\cspracnr & \cstema & 3 horas   \\
+			\hline 
+		\end{tabular}
+	\end{table}
+	
+	
+	\section{Datos de los estudiantes}
+	\begin{itemize}
+		\item GIT: \href{https://github.com/Robertohg/FLP}{GIT-Repo}
+		\item Integrantes: 
+		\begin{itemize}
+			\item Roberto Heredia Garland
+			
+		\end{itemize}		
+	\end{itemize}
+	
+	
+	
+
+	
+	\section{Ejercicios}\label{sec:ejercicios}
+	\begin{enumerate}
+		\item ¿Cuál es la diferencia entre lenguaje de maquina y lenguaje ensamblador?
+		
+		El lenguaje de maquina es una secuencia de bits que controlan directamente el procesador, haciendo que este sume, compare, mueva información de un lugar a otro, y entre otros en el tiempo adecuado. \cite{10.5555/1610485}
+		
+		Por otro lado los lenguajes Assambly fueron inventados para poder expresar operaciones con abreviaciones mnemotecnias.\cite{10.5555/1610485}
+
+		
+		\item ¿En qué circunstancia un lenguaje de alto nivel es superior al lenguaje ensamblador?
+		
+		Los lenguajes de alto nivel son superiores a los lenguajes ensamblador en cuanto a la reutilizacion de codigo en diferentes maquinas
+		
+	\item ¿En qué circunstancia un lenguaje ensamblador es superior al lenguaje de alto nivel?
+	
+	Anteriormente los compiladores no podían generar lenguaje de ensamblador mas rápidos que programar directamente en ensamblador, pero esto ya no es asi.
+	
+\item ¿Por qué hay tantos lenguajes de programación?
+
+Debido a la evolución de Ciencias de la computación, propósitos específicos de los lenguajes, preferencia personal, facilidad de uso y entre otros.
+\newpage
+\item Nombre 3 lenguajes en las categorías de von Neumann, funcional y orientado a objetos. Dos lenguajes lógicos y 2 concurrentes.	
+	\begin{enumerate}	
+	\item von Neumann
+	\begin{itemize}
+	\item C
+	\item Ada
+	\item Fortran
+	\end{itemize}
+	\item Funcional
+	\begin{itemize}
+	\item Lisp
+	\item ML
+	\item Haskell
+	\end{itemize}
+	\item Orientado a Objetos
+	\begin{itemize}
+	\item SmallTalk
+	\item Eiffel
+	\item Java
+	\end{itemize}
+	\item Logicos
+	\begin{itemize}
+	\item Prolog
+	\item Spreadsheets
+	\end{itemize}
+		\item Logicos
+	\begin{itemize}
+	\item Id
+	\item Val
+	\end{itemize}
+	\end{enumerate}
+	\item ¿Qué distingue a los lenguajes declarativos e imperativos?
+	
+	Los lenguajes declarativos se enfocan en que tiene que hacer la computadora y los lenguajes imperativos se enfocan en como la computadora debe hacerlo.
+	
+	\item ¿Cuál es considerado el primer lenguaje de alto nivel?
+	
+	Fortan
+	
+	\item ¿Cuál es considerado el primer lenguaje funcional?
+	
+	Lambda calculus
+	
+	\item ¿Por qué los lenguajes concurrentes no están considerados en la clasificación de Scott (2000)(Figura 1.1).?
+	
+Debido a que en realidad las categorías están abiertas a debate y los autores no se ponen de acuerdo.	
+	
+	\item Lista las principales fases de un compilador y describe la función de cada fase.
+	
+	\begin{enumerate}
+	\item Scanner (Análisis Léxico)
+	
+		Genera un flujo de Tokens. Se simplifica el trabajo del Parser reduciendo el tamaño del flujo.
+	\item Parser (Análisis sintáctico)
+	
+		Genera un árbol Parse, basado en gramaticas libres de contexto.
+	
+	\item Semantic analysis
+	
+		En el analisis semantico se genera un árbol de sintaxis abstracta. En esta fase se reconoce las cuando los identificadores apuntan a una misma entidad de programa. Se genera una tabla de símbolos.  
+		
+	\item Machine-independent code improvement 
+	
+		Se mejora el árbol generado en en el análisis semántico
+	\item Target code generation
+		Se genera el codigo en el lenguaje objetivo (assembler) recorriendo el arbol de sintaxis.
+	
+	\item Machine-specific code improvement 
+		Se mejora el código generado en el paso anterior.
+	\end{enumerate}
+	
+	\item ¿En qué circunstancias tiene sentido que un compilador pase o revise el código varias veces?
+
+Cuando se quiere optimizar el código.	
+	
+	\item ¿Cuál es el propósito de la tabla de símbolos en un compilador?
+	
+	Se utiliza para determinar reglas que no estén en la estructura de la gramática de libre contexto.	
+	
+	\item ¿En la actualidad, que programa es mas eficiente, uno desarrollado desde cero en ensamblador o uno generado por un compilador?
+	
+Uno generado por un compilador.	
+	
+	\end{enumerate}
+
+
+	\section{Investigación}\label{sec:ejercicios}
+	
+	FORTRAN
+Fortran es un lenguaje de programación que está orientado y adaptado para aplicaciones numéricas y computación científica.
+Con Fortran nació la programación moderna. A través de él se han puesto en práctica conceptos como la computación científica, o la complicación de código, entre otros.
+El origen de este lenguaje de programación se remonta al año 1954, y se le atribuye a John Backus, un experimentado científico de computadores estadounidense que pertenecía a la empresa IBM.
+Su propuesta se centraba en poner en marcha un lenguaje de programación cuyo objetivo era traducir de una manera sencilla, y accesible, diferentes fórmulas matemáticas en código que pudiese entender un ordenador.
+Como curiosidad, este especialista en computación, estuvo trabajando en un proyecto previo denominado SSEC (Selective Sequence Electronic Calculator) para conseguir que este programa pudiese calcular las posiciones de la luna.
+Actualmente el lenguaje FORTRAN es utilizado, por una parte, debido a la existencia de numerosas bibliotecas de funciones utilizables en FORTRAN, por otra parte, porque existe compiladores FORTRAN potentes que producen ejecutables muy rápidos. No obstante, se reemplaza cada vez más, incluso para aplicaciones científicas, por los lenguajes C y C ++.
+
+Dado que el FORTRAN se creó en la época de las tarjetas perforadas (en particular con el sistema FMS), mantiene una determinada rigidez en la compaginación del programa fuente, hasta el FORTRAN 90. El código por mucho tiempo debió comenzar a partir de la 7ª columna y no sobrepasar de la 72 (las columnas 73 a 80 se reservan para la numeración de las tarjetas perforadas).
+
+Además, se escribieron desde hace tiempo numerosos códigos industriales en FORTRAN, y la compatibilidad de las nuevas versiones con las anteriores es indispensable, al precio de la conservación de conceptos anticuados.
+
+EL lenguaje BASIC, en su versión original (1964) se concibió como un pequeño lenguaje de carácter pedagógico que permitía iniciar a los estudiantes en la programación, antes de pasar a los lenguajes "serios" de aquella época: FORTRAN y ALGOL. Se encuentran en él algunas características del lenguaje FORTRAN.
+Evolución de Fortran
+A la hora de presentarse, hubo  algunas reticencias, ya que todos estaban acostumbrados a su antecesor, el lenguaje ensamblador que surgió en el año 1949.
+Pero pronto cambió la percepción general ya que eran muchas las ventajas que conllevaba utilizar Fortran. Fue considerado como un lenguaje de programación de alto nivel, que conseguía traducir programas enteros sin necesidad de hacerlo de forma manual como con sus predecesores. Además, su uso era más sencillo, no tan restrictivo como lo fueron los anteriores lenguajes de programación existentes.
+Una de las cosas que consiguió revolucionar el mundo de la programación fue el hecho de poder permitir que el código se escribiese de manera más rápida, y además no requería de profesionales tan especializados, lo que lo hacía más accesible a cualquiera.
+Es un lenguaje que nunca ha dejado de evolucionar. Ha ido variando a lo largo de los años hasta llegar a Fortran 2018 al que se le han incluido nuevas funcionalidades y mejoras desde su origen.
+Fortran ha servido de inspiración y base para la creación de otro tipo de lenguajes de programación como: Lisp (1958), COBOL (1959) o ALGOL (1958).
+Sin duda, es uno de los lenguajes que todavía se tienen en cuenta a la hora de trabajar con ellos, y que ha servido de información para crear otros aspectos de programación derivados en base a él.
+Ventajas y desventajas de Fortran
+\begin{enumerate}
+\item Entre sus ventajas destacan las siguientes:
+\begin{itemize}
+\item Más sencillo de aprender que sus antecesores.
+\item Todavía se utiliza como uno de los lenguajes más destacados a la hora de realizar cálculo numérico.
+\item	Se considera una revolución y el principio de la programación moderna.
+\item	Su puesta en práctica, y los años de uso han dado lugar a librerías probadas y eficientes que constatan su eficacia como lenguaje de programación.
+\end{itemize}
+
+\item Sus desventajas también han de tenerse en cuenta a la hora de ser utilizado:
+\begin{itemize}
+\item	Es un lenguaje de programación en el que no existen clases, o estructuras.
+\item	Imposibilita el hecho de hacer una reserva de memoria dinámica.
+\item	Para el proceso de textos, listas y estructuras de datos de alto grado de complejidad es un lenguaje algo primitivo.
+\end{itemize}
+
+\end{enumerate}
+
+Elementos básicos de un programa en FORTRAN 
+Un programa en FORTRAN tiene los siguientes elementos básicos: 
+\begin{itemize}
+\item Nombre del programa. El nombre del programa es en realidad opcional, pero es muy buena idea tenerlo.
+\item Declaraciones de variables utilizadas en el programa. 
+\item Cuerpo del programa. 
+\item Comandos a ejecutar en el código. 
+Los comandos se ejecutan en orden de aparición. 
+El programa siempre debe terminar con el comando END.
+\end{itemize}
+
+	
+		\begin{lstlisting}[language=Fortran, basicstyle=\small,caption={Fortran}]
+
+REAL T, SUM
+      INTEGER M
+      T = 6.
+      SUM = 0.0 + T
+      WRITE (*,*) 'SUM IS ', SUM
+      STOP
+      END
+		   \end{lstlisting}
+	
+	\clearpage
+	%\bibliographystyle{apalike}
+	\bibliographystyle{IEEEtranN}
+	\bibliography{bibliography}
+		
+	
+\end{document}

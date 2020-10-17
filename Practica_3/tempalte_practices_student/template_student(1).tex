@@ -1,0 +1,236 @@
+%package list
+\documentclass{article}
+\usepackage[top=3cm, bottom=3cm, outer=3cm, inner=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+%\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{array}
+%\usepackage{multicol}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+\usepackage{natbib}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{multirow}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\csemail}{vmachacaa@ulasalle.edu.pe}
+\newcommand{\csdocente}{MSc. Vicente Enrique Machaca Arceda}
+\newcommand{\cscurso}{Fundamentos de Lenguajes de Programación}
+\newcommand{\csuniversidad}{Universidad La Salle}
+\newcommand{\csescuela}{Escuela Profesional de Ingeniería de Software}
+\newcommand{\cspracnr}{03}
+\newcommand{\cstema}{Ensamblador}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[english,spanish]{babel}
+\usepackage[utf8]{inputenc}
+\AtBeginDocument{\selectlanguage{spanish}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\refname}{Referencias}
+\renewcommand{\tablename}{Tabla} %esto no funciona cuando se usa babel
+\AtBeginDocument{%
+	\renewcommand\tablename{Tabla}
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{30pt}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\fancyhead[L]{\raisebox{-0.2\height}{\includegraphics[width=3cm]{img/logo_salle}}}
+\fancyhead[C]{}
+\fancyhead[R]{\fontsize{7}{7}\selectfont	\csuniversidad \\ \csescuela \\ \textbf{\cscurso} }
+\fancyfoot[L]{MSc. Vicente Machaca}
+\fancyfoot[C]{FLP}
+\fancyfoot[R]{Página \thepage}
+
+
+\usepackage{listings} 
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+
+
+
+\begin{document}
+	
+	\vspace*{10px}
+	
+	\begin{center}	
+		\fontsize{17}{17} \textbf{ Práctica \cspracnr}
+	\end{center}
+	%\centerline{\textbf{\underline{\Large Título: Informe de revisión del estado del arte}}}
+	%\vspace*{0.5cm}
+	
+
+	\begin{table}[h]
+		\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+			\hline 
+			\textbf{DOCENTE} & \textbf{CARRERA}  & \textbf{CURSO}   \\
+			\hline 
+			\csdocente & \csescuela & \cscurso    \\
+			\hline 
+		\end{tabular}
+	\end{table}	
+	
+	
+	\begin{table}[h]
+		\begin{tabular}{|x{4.7cm}|x{4.8cm}|x{4.8cm}|}
+			\hline 
+			\textbf{PRÁCTICA} & \textbf{TEMA}  & \textbf{DURACIÓN}   \\
+			\hline 
+			\cspracnr & \cstema & 3 horas   \\
+			\hline 
+		\end{tabular}
+	\end{table}
+	
+	
+	\section{Competencias del curso}
+	\begin{itemize}
+		\item Conocer el desarrollo histórico de los lenguajes de programación y los paradigmas de programación.
+		\item Comprender el papel de los diferentes mecanismos de abstracción en la creación de facilidades definidas por el usuario así como los beneficios de los lenguajes intermedios en el proceso de compilación.		
+	\end{itemize}
+	
+	
+	\section{Competencias de la práctica}
+	\begin{itemize}
+		\item Programar tareas básicas en lenguaje ensamblador.
+	\end{itemize}
+	
+	\section{Equipos y materiales}
+	\begin{itemize}
+		\item Latex
+		\item Conección a internet 
+		\item IDE de desarrollo
+		%\item Matplotlib 
+		%\item Numpy 
+		%\item BioPython
+		%\item Cuenta en Github
+	\end{itemize}
+
+	\section{Entregables}
+	\begin{itemize}		
+		\item Se debe elaborar un informe en \textbf{Latex} donde se responda a cada ejercicio de la Sección \ref{sec:ejercicios}.
+		\item En el informe se debe agregar un enlace al repositorio Github donde esta el código.
+		\item En el informe se debe agregar el código fuente asi como capturas de pantalla de la ejecución y resultados del mismo.
+		\item Por cada 5 minutos de retraso, el alumno tendrá un punto menos.
+	\end{itemize}
+
+
+	
+	\clearpage
+	
+	\section{Ejercicios}\label{sec:ejercicios}	
+	
+	\begin{enumerate}
+		\item Implementar un programa que muestre la suma, la diferencia, la multiplicación, la división y el promedio de dos números ingresados por teclado. 
+			\begin{lstlisting}
+			>> Ingrese un numero: 3
+			>> Ingrese otro numero: 2
+			>> La suma es: 5
+			>> La diferencia es: 1
+			>> La multiplicacion es: 6
+			>> La division es: 1.5
+			>> El promedio es: 2.5
+			\end{lstlisting}
+
+		\item Implementar un programa que solite una cantidad \textit{n} de números y luego retorne: la suma de estos, el promedio, el mayor y el menor.
+		
+			\begin{lstlisting}
+			>> Ingrese la cantidad de numeros: 4
+			>> Ingrese un numero: 3
+			>> Ingrese un numero: 2
+			>> Ingrese un numero: 2
+			>> Ingrese un numero: 3
+			>> La suma es: 10		
+			>> El promedio es: 2.5
+			>> El mayor es: 3
+			>> El menor es: 2
+			\end{lstlisting}
+		
+		\item Implemente un programa que solicite por teclado: la longitud de los tres lados de un triangulo. Luego el programa debe indicar si es un triangulo valido.
+		
+		\begin{lstlisting}
+		>> Ingrese el primer lado del triangulo: 2
+		>> Ingrese el segundo lado del triangulo: 3
+		>> Ingrese el tercer lado del triangulo: 2
+		>> El triangulo es valido
+		\end{lstlisting}
+		
+		\item Implemente un programa que solicite un número \textit{n}, luego este debe mostrar que números desde 1 a 20, son multiplos de \textit{n}.
+			
+			\begin{lstlisting}
+			>> Ingrese un numero: 3
+			>> El numero 1 no es multiplo de 3
+			>> El numero 2 no es multiplo de 3
+			>> El numero 3 si es multiplo de 3
+			>> El numero 4 no es multiplo de 3
+			>> El numero 5 no es multiplo de 3
+			>> El numero 6 si es multiplo de 3
+			...
+			\end{lstlisting}
+	\end{enumerate}
+
+
+	
+\clearpage
+	\section{Rúbricas}
+	
+	\begin{table}[hbt!]
+		\setlength{\tabcolsep}{0.5em} % for the horizontal padding
+		{\renewcommand{\arraystretch}{1.5}% for the vertical padding
+		\begin{tabular}{|p{5cm}|x{3cm}|x{3cm}|x{3cm}|}
+			\hline 
+			\textbf{Rúbrica} & \textbf{Cumple}  & \textbf{Cumple con obs.}  & \textbf{No cumple} \\
+			\hline 
+			\textbf{Informe}: El informe debe estar en Latex, con un formato limpio y facil de leer.  & 3 & 1.5 & 0   \\ 
+			\hline 
+			\textbf{Implementación}: Implementa la funcionalidad correcta de cada ejercicio.  & 10 & 5 & 0   \\ \hline
+			\textbf{Mensaje de ayuda}: Agrega mensajes de ayuda (textos solicitando que se ingrese los números, etc.) por consola.  & 5 & 2.5 & 0   \\ \hline
+			
+			%\textbf{Implementación}: Responde cada ejercicio correctamente con una complejidad alta.  & 10 & 5 & 0   \\ \hline
+							
+			\textbf{Presentación}: El alumno demuestra dominio del tema y conoce con exactitud cada parte de su código. & 2 & 1 & 0   \\ 			\hline 
+			
+			\textbf{Errores ortográficos}: Por cada error ortográfico, se le descontara 1 punto.  & - & - & -   \\ \hline
+			
+		\end{tabular}
+	}
+	\end{table}
+	
+	
+	%\bibliographystyle{apalike}
+	%\bibliographystyle{IEEEtranN}
+	%\bibliography{bibliography}
+	
+	
+	
+	
+	
+\end{document}
