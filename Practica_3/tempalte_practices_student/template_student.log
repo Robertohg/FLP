@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.7)  2 SEP 2020 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.7)  17 OCT 2020 15:18
 entering extended mode
 **./template_student.tex
 (template_student.tex
@@ -402,14 +402,10 @@ File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count273
 \l__pdf_internal_box=\box54
 ) (template_student.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-
-
-LaTeX Warning: Label `sec:ejercicios' multiply defined.
-
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `template_student.aux'.
 
@@ -526,6 +522,10 @@ LaTeX Info: Redefining \% on input line 76.
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
 \c@lstlisting=\count281
+
+
+Package natbib Warning: Citation `10.5555/1610485' undefined on input line 77.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -540,11 +540,33 @@ Overfull \hbox (0.89597pt too wide) in paragraph at lines 99--106
 [][] 
  []
 
-<img/logo_salle.png, id=19, 268.00125pt x 124.465pt>
+
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
+sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang2.
+sty"
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+)
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang3.
+sty"
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+32.
+
+("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+<img/logo_salle.png, id=12, 268.00125pt x 124.465pt>
 File: img/logo_salle.png Graphic file (type png)
 <use img/logo_salle.png>
-Package pdftex.def Info: img/logo_salle.png  used on input line 143.
+Package pdftex.def Info: img/logo_salle.png  used on input line 159.
 (pdftex.def)             Requested size: 85.35826pt x 39.64159pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (30.0pt): 
 Make it at least 39.64159pt.
@@ -554,64 +576,61 @@ This may cause the page layout to be inconsistent, however.
 [1{C:/Users/rober/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./img/logo_salle.png>]
+<img/eje1.png, id=56, 482.40225pt x 384.2355pt>
+File: img/eje1.png Graphic file (type png)
+<use img/eje1.png>
+Package pdftex.def Info: img/eje1.png  used on input line 192.
+(pdftex.def)             Requested size: 227.62204pt x 181.30013pt.
 File: img/logo_salle.png Graphic file (type png)
 <use img/logo_salle.png>
-Package pdftex.def Info: img/logo_salle.png  used on input line 211.
+Package pdftex.def Info: img/logo_salle.png  used on input line 193.
 (pdftex.def)             Requested size: 85.35826pt x 39.64159pt.
- [2]
+ [2 <./img/eje1.png>]
 File: img/logo_salle.png Graphic file (type png)
 <use img/logo_salle.png>
-Package pdftex.def Info: img/logo_salle.png  used on input line 253.
+Package pdftex.def Info: img/logo_salle.png  used on input line 252.
 (pdftex.def)             Requested size: 85.35826pt x 39.64159pt.
  [3]
-("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
-sty"
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-("C:\Users\rober\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.
-sty"
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 283.
+<img/eje2.png, id=159, 482.40225pt x 384.2355pt>
+File: img/eje2.png Graphic file (type png)
+<use img/eje2.png>
+Package pdftex.def Info: img/eje2.png  used on input line 303.
+(pdftex.def)             Requested size: 227.62204pt x 181.30013pt.
 File: img/logo_salle.png Graphic file (type png)
 <use img/logo_salle.png>
-Package pdftex.def Info: img/logo_salle.png  used on input line 294.
+Package pdftex.def Info: img/logo_salle.png  used on input line 305.
 (pdftex.def)             Requested size: 85.35826pt x 39.64159pt.
- [4] (template_student.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
+ [4]
 File: img/logo_salle.png Graphic file (type png)
 <use img/logo_salle.png>
-Package pdftex.def Info: img/logo_salle.png  used on input line 300.
+Package pdftex.def Info: img/logo_salle.png  used on input line 305.
 (pdftex.def)             Requested size: 85.35826pt x 39.64159pt.
- [5
+ [5 <./img/eje2.png>]
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
- (template_student.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+(template_student.aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 311.
 Package rerunfilecheck Info: File `template_student.out' has not changed.
-(rerunfilecheck)             Checksum: BF4D6297DE59111654E540E4CF7BA665;155.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+(rerunfilecheck)             Checksum: D52DB058A3F55B71C3285DFAF358097C;104.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
  ) 
 Here is how much of TeX's memory you used:
- 10577 strings out of 480763
- 156811 string characters out of 2893980
- 640547 words of memory out of 3000000
- 26381 multiletter control sequences out of 15000+200000
- 535291 words of font info for 34 fonts, out of 3000000 for 9000
+ 10926 strings out of 480763
+ 160508 string characters out of 2893980
+ 651962 words of memory out of 3000000
+ 26592 multiletter control sequences out of 15000+200000
+ 535546 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,16n,51p,440b,1447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,17n,45p,224b,2436s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\rober\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
 tcrm0900.pk> <C:\Users\rober\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
 ec/dpi600\tcrm1000.pk><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/t
@@ -622,10 +641,11 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
 rs/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
 pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmr9.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb>
-Output written on template_student.pdf (5 pages, 126691 bytes).
+blic/amsfonts/cm/cmsy9.pfb><C:/Users/rober/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on template_student.pdf (5 pages, 155111 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 500000)
+ 32 words of extra memory for PDF output out of 10000 (max. 10000000)
 

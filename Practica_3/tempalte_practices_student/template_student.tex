@@ -25,8 +25,8 @@
 Programación}
 \newcommand{\csuniversidad}{Universidad La Salle}
 \newcommand{\csescuela}{Escuela Profesional de Ingeniería de Software}
-\newcommand{\cspracnr}{02}
-\newcommand{\cstema}{Practica 2}
+\newcommand{\cspracnr}{03}
+\newcommand{\cstema}{Ensamblador}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -122,179 +122,190 @@ Programación}
 	
 	\section{Ejercicios}\label{sec:ejercicios}
 	\begin{enumerate}
-		\item ¿Cuál es la diferencia entre lenguaje de maquina y lenguaje ensamblador?
-		
-		El lenguaje de maquina es una secuencia de bits que controlan directamente el procesador, haciendo que este sume, compare, mueva información de un lugar a otro, y entre otros en el tiempo adecuado. \cite{10.5555/1610485}
-		
-		Por otro lado los lenguajes Assambly fueron inventados para poder expresar operaciones con abreviaciones mnemotecnias.\cite{10.5555/1610485}
-
-		
-		\item ¿En qué circunstancia un lenguaje de alto nivel es superior al lenguaje ensamblador?
-		
-		Los lenguajes de alto nivel son superiores a los lenguajes ensamblador en cuanto a la reutilizacion de codigo en diferentes maquinas
-		
-	\item ¿En qué circunstancia un lenguaje ensamblador es superior al lenguaje de alto nivel?
+		\item Implementar un programa que muestre la suma, la diferencia, la multiplicación, la división y el promedio de dos números ingresados por teclado.
 	
-	Anteriormente los compiladores no podían generar lenguaje de ensamblador mas rápidos que programar directamente en ensamblador, pero esto ya no es asi.
-	
-\item ¿Por qué hay tantos lenguajes de programación?
-
-Debido a la evolución de Ciencias de la computación, propósitos específicos de los lenguajes, preferencia personal, facilidad de uso y entre otros.
-\newpage
-\item Nombre 3 lenguajes en las categorías de von Neumann, funcional y orientado a objetos. Dos lenguajes lógicos y 2 concurrentes.	
-	\begin{enumerate}	
-	\item von Neumann
-	\begin{itemize}
-	\item C
-	\item Ada
-	\item Fortran
-	\end{itemize}
-	\item Funcional
-	\begin{itemize}
-	\item Lisp
-	\item ML
-	\item Haskell
-	\end{itemize}
-	\item Orientado a Objetos
-	\begin{itemize}
-	\item SmallTalk
-	\item Eiffel
-	\item Java
-	\end{itemize}
-	\item Logicos
-	\begin{itemize}
-	\item Prolog
-	\item Spreadsheets
-	\end{itemize}
-		\item Logicos
-	\begin{itemize}
-	\item Id
-	\item Val
-	\end{itemize}
-	\end{enumerate}
-	\item ¿Qué distingue a los lenguajes declarativos e imperativos?
-	
-	Los lenguajes declarativos se enfocan en que tiene que hacer la computadora y los lenguajes imperativos se enfocan en como la computadora debe hacerlo.
-	
-	\item ¿Cuál es considerado el primer lenguaje de alto nivel?
-	
-	Fortan
-	
-	\item ¿Cuál es considerado el primer lenguaje funcional?
-	
-	Lambda calculus
-	
-	\item ¿Por qué los lenguajes concurrentes no están considerados en la clasificación de Scott (2000)(Figura 1.1).?
-	
-Debido a que en realidad las categorías están abiertas a debate y los autores no se ponen de acuerdo.	
-	
-	\item Lista las principales fases de un compilador y describe la función de cada fase.
-	
-	\begin{enumerate}
-	\item Scanner (Análisis Léxico)
-	
-		Genera un flujo de Tokens. Se simplifica el trabajo del Parser reduciendo el tamaño del flujo.
-	\item Parser (Análisis sintáctico)
-	
-		Genera un árbol Parse, basado en gramaticas libres de contexto.
-	
-	\item Semantic analysis
-	
-		En el analisis semantico se genera un árbol de sintaxis abstracta. En esta fase se reconoce las cuando los identificadores apuntan a una misma entidad de programa. Se genera una tabla de símbolos.  
-		
-	\item Machine-independent code improvement 
-	
-		Se mejora el árbol generado en en el análisis semántico
-	\item Target code generation
-		Se genera el codigo en el lenguaje objetivo (assembler) recorriendo el arbol de sintaxis.
-	
-	\item Machine-specific code improvement 
-		Se mejora el código generado en el paso anterior.
-	\end{enumerate}
-	
-	\item ¿En qué circunstancias tiene sentido que un compilador pase o revise el código varias veces?
-
-Cuando se quiere optimizar el código.	
-	
-	\item ¿Cuál es el propósito de la tabla de símbolos en un compilador?
-	
-	Se utiliza para determinar reglas que no estén en la estructura de la gramática de libre contexto.	
-	
-	\item ¿En la actualidad, que programa es mas eficiente, uno desarrollado desde cero en ensamblador o uno generado por un compilador?
-	
-Uno generado por un compilador.	
-	
-	\end{enumerate}
-
-
-	\section{Investigación}\label{sec:ejercicios}
-	
-	FORTRAN
-Fortran es un lenguaje de programación que está orientado y adaptado para aplicaciones numéricas y computación científica.
-Con Fortran nació la programación moderna. A través de él se han puesto en práctica conceptos como la computación científica, o la complicación de código, entre otros.
-El origen de este lenguaje de programación se remonta al año 1954, y se le atribuye a John Backus, un experimentado científico de computadores estadounidense que pertenecía a la empresa IBM.
-Su propuesta se centraba en poner en marcha un lenguaje de programación cuyo objetivo era traducir de una manera sencilla, y accesible, diferentes fórmulas matemáticas en código que pudiese entender un ordenador.
-Como curiosidad, este especialista en computación, estuvo trabajando en un proyecto previo denominado SSEC (Selective Sequence Electronic Calculator) para conseguir que este programa pudiese calcular las posiciones de la luna.
-Actualmente el lenguaje FORTRAN es utilizado, por una parte, debido a la existencia de numerosas bibliotecas de funciones utilizables en FORTRAN, por otra parte, porque existe compiladores FORTRAN potentes que producen ejecutables muy rápidos. No obstante, se reemplaza cada vez más, incluso para aplicaciones científicas, por los lenguajes C y C ++.
-
-Dado que el FORTRAN se creó en la época de las tarjetas perforadas (en particular con el sistema FMS), mantiene una determinada rigidez en la compaginación del programa fuente, hasta el FORTRAN 90. El código por mucho tiempo debió comenzar a partir de la 7ª columna y no sobrepasar de la 72 (las columnas 73 a 80 se reservan para la numeración de las tarjetas perforadas).
-
-Además, se escribieron desde hace tiempo numerosos códigos industriales en FORTRAN, y la compatibilidad de las nuevas versiones con las anteriores es indispensable, al precio de la conservación de conceptos anticuados.
-
-EL lenguaje BASIC, en su versión original (1964) se concibió como un pequeño lenguaje de carácter pedagógico que permitía iniciar a los estudiantes en la programación, antes de pasar a los lenguajes "serios" de aquella época: FORTRAN y ALGOL. Se encuentran en él algunas características del lenguaje FORTRAN.
-Evolución de Fortran
-A la hora de presentarse, hubo  algunas reticencias, ya que todos estaban acostumbrados a su antecesor, el lenguaje ensamblador que surgió en el año 1949.
-Pero pronto cambió la percepción general ya que eran muchas las ventajas que conllevaba utilizar Fortran. Fue considerado como un lenguaje de programación de alto nivel, que conseguía traducir programas enteros sin necesidad de hacerlo de forma manual como con sus predecesores. Además, su uso era más sencillo, no tan restrictivo como lo fueron los anteriores lenguajes de programación existentes.
-Una de las cosas que consiguió revolucionar el mundo de la programación fue el hecho de poder permitir que el código se escribiese de manera más rápida, y además no requería de profesionales tan especializados, lo que lo hacía más accesible a cualquiera.
-Es un lenguaje que nunca ha dejado de evolucionar. Ha ido variando a lo largo de los años hasta llegar a Fortran 2018 al que se le han incluido nuevas funcionalidades y mejoras desde su origen.
-Fortran ha servido de inspiración y base para la creación de otro tipo de lenguajes de programación como: Lisp (1958), COBOL (1959) o ALGOL (1958).
-Sin duda, es uno de los lenguajes que todavía se tienen en cuenta a la hora de trabajar con ellos, y que ha servido de información para crear otros aspectos de programación derivados en base a él.
-Ventajas y desventajas de Fortran
-\begin{enumerate}
-\item Entre sus ventajas destacan las siguientes:
-\begin{itemize}
-\item Más sencillo de aprender que sus antecesores.
-\item Todavía se utiliza como uno de los lenguajes más destacados a la hora de realizar cálculo numérico.
-\item	Se considera una revolución y el principio de la programación moderna.
-\item	Su puesta en práctica, y los años de uso han dado lugar a librerías probadas y eficientes que constatan su eficacia como lenguaje de programación.
-\end{itemize}
-
-\item Sus desventajas también han de tenerse en cuenta a la hora de ser utilizado:
-\begin{itemize}
-\item	Es un lenguaje de programación en el que no existen clases, o estructuras.
-\item	Imposibilita el hecho de hacer una reserva de memoria dinámica.
-\item	Para el proceso de textos, listas y estructuras de datos de alto grado de complejidad es un lenguaje algo primitivo.
-\end{itemize}
-
-\end{enumerate}
-
-Elementos básicos de un programa en FORTRAN 
-Un programa en FORTRAN tiene los siguientes elementos básicos: 
-\begin{itemize}
-\item Nombre del programa. El nombre del programa es en realidad opcional, pero es muy buena idea tenerlo.
-\item Declaraciones de variables utilizadas en el programa. 
-\item Cuerpo del programa. 
-\item Comandos a ejecutar en el código. 
-Los comandos se ejecutan en orden de aparición. 
-El programa siempre debe terminar con el comando END.
-\end{itemize}
 
 	
-		\begin{lstlisting}[language=Fortran, basicstyle=\small,caption={Fortran}]
+		\begin{lstlisting}[language={[x86masm]Assembler}, basicstyle=\small]
 
-REAL T, SUM
-      INTEGER M
-      T = 6.
-      SUM = 0.0 + T
-      WRITE (*,*) 'SUM IS ', SUM
-      STOP
-      END
+.data
+    txt1: .asciiz "\nIngrese un numero \n"
+    txt2: .asciiz "\nIngrese otro numero \n"
+    suma: .asciiz "\nLa suma es \n"
+    dif: .asciiz "\nla diferencia es \n"
+    multi: .asciiz "\La multiplicacion es o\n"
+    divi: .asciiz "\La divicion es o\n"
+.text
+main:
+	la $a0, txt1
+	li $v0,4
+	syscall
+
+	li $v0,6 #f0
+	syscall
+
+	mov.s	$f1, $f0
+	la $a0, txt2
+	li $v0,4
+	syscall
+
+	li $v0,6 #f0
+	syscall
+
+	mov.s	$f2, $f0
+	add.s $f12, $f2, $f1 #sumar
+	mov.s $f13, $f12
+	la $a0, suma
+	li $v0,4
+	syscall
+
+	li $v0,2
+	syscall
+
+	sub.s $f12, $f1, $f2 
+	la $a0, dif     #restar
+	li $v0,4
+	syscall
+
+	li $v0,2
+	syscall
+
+	mul.s $f12, $f1, $f2 
+	la $a0, multi       #multiplicar
+	li $v0,4
+	syscall
+
+	li $v0,2
+	syscall
+
+	div.s $f12, $f1, $f2 
+	la $a0, divi        #dividir
+	li $v0,4
+	syscall
+
+	li $v0,2
+	syscall
+
+
+	jr	$ra
 		   \end{lstlisting}
+	\includegraphics[width=8cm]{img/eje1.png}
+	\newpage
+	\item Implementar un programa que solicite una cantidad \textit{n} de números y luego retorne: la suma de estos, el promedio, el mayor y el menor.
+	
+		\begin{lstlisting}[language={[x86masm]Assembler}, basicstyle=\small]
+
+.data 
+	ingrese_numero: .asciiz "Ingrese el numero de iteraciones: "
+	numero_mayor: .asciiz "El numero mayor : "
+	numero_menor: .asciiz "\nEl numero menor : "
+	promedio: .asciiz "\nEl promedio : "
+	numero: .asciiz "Ingrese el numero : "
+
+.text 
+main: 	
+	
+	li $t1,0
+	li $t2,0 
+	li $t3,0 
+	li $t4,0 
+	li $t5,0  
+	
+	
+	li $v0, 4 				
+	la $a0, ingrese_numero 		
+	syscall 			
+	
+	
+	li $v0,5
+	syscall
+	
+	
+	move $t2,$v0 
+	
+	li $v0, 4 				
+	la $a0, numero 		
+	syscall 	
+	li $v0,5
+	syscall
+	
+	add $t5, $t5, $v0
+	
+	
+	move $t3,$v0
+	move $t4,$v0
+	
+	add $t1,$t1,1   
+	
+	Loop:
+		beq $t2,$t1, Exit
+		
+		li $v0, 4 				
+		la $a0, numero 		
+		syscall 
+		li $v0,5
+		syscall
+		
+		add $t5, $t5, $v0
+				
+		
+		bgt $v0, $t3, Them1
+			j EndIf1
+		Them1:
+			move $t3, $v0
+		EndIf1:
+		
+		bgt $t4, $v0, Them2
+			j EndIf2
+		Them2:
+			move $t4, $v0
+		EndIf2:	
+		
+		add $t1,$t1,1  
+			
+		
+		j Loop
+	Exit:		
+	
+	li $v0, 4 				
+	la $a0, numero_mayor 		
+	syscall 
+	
+	move $a0, $t3
+	li $v0, 1 
+	syscall
+		
+	li $v0, 4 				
+	la $a0, numero_menor 		
+	syscall 
+	
+	move $a0, $t4
+	li $v0, 1 
+	syscall
+		
+	li $v0, 4 				
+	la $a0, promedio		
+	syscall 
+		
+	mtc1 $t5, $f0
+	cvt.s.w $f0, $f0
+
+	mtc1 $t2, $f1
+	cvt.s.w $f1, $f1
+	
+	div.s $f12, $f0, $f1
+	li $v0, 2 
+	syscall
+		
+	jr $ra
+		   \end{lstlisting}	
+	
+	\includegraphics[width=8cm]{img/eje2.png}
 	
 	\clearpage
 	%\bibliographystyle{apalike}
-	\bibliographystyle{IEEEtranN}
-	\bibliography{bibliography}
-		
+	%\bibliographystyle{IEEEtranN}
+	%\bibliography{bibliography}
+		\end{enumerate}
 	
 \end{document}
